@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #efefef;
+  font-family: "Exo 2", sans-serif;
+}
+
+#mainBlock > article {
+  background: #fff;
+  width: 20%;
+  margin: 30px auto;
+}
+#mainBlock article img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+#mainBlock > article > header {
+  height: 250px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 3px;
+  position: relative;
+}
+/* .line {
+  position: absolute;
+  background: #fff;
+  height: 118px;
+  width: 100%;
+  transform: skew(0, -16deg);
+  bottom: -44px;
+} */
+.line {
+  background: #fff;
+  width: 100%;
+  height: 108px;
+  position: absolute;
+  bottom: -58px;
+  transform: skew(0deg, -18deg);
+}
+
+#mainBlock > article > main {
+  position: relative;
+  z-index: 111;
+  border-top: 2px solid #3333331f;
+  padding: 10px;
+}
+.icon {
+  position: relative;
+}
+.icon span {
+  position: absolute;
+  top: -116px;
+  right: 15px;
+  background-image: linear-gradient(#08c79c, #4bd6b7f2, #666d99c4);
+  color: #fff;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#mainBlock :is(aside, header, #mainBlock main) {
+  text-align: center;
+}
+
+#mainBlock header h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+#mainBlock :is(aside p, main p) {
+  color: #999;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+#mainBlock main footer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.iconsBlock i {
+  font-size: 30px;
+  cursor: pointer;
+}
+.iconsBlock:first-child i {
+  filter: grayscale(100%);
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  color: #fff;
+  border-radius: 100%;
+}
+
+.iconsBlock:nth-child(2) {
+  color: #00acee;
+}
+.iconsBlock:nth-child(3) {
+  color: #3b5998;
+}
+
+.iconsBlock i {
+  filter: grayscale(100%);
+}
+
+.iconsBlock :is(i):hover {
+  filter: grayscale(0);
+}
+
+/*-------------last footer block starts here -------------*/
+#last_footer_part article {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+}
+
+#last_footer_part article p {
+  font-size: 14px;
+  font-weight: 100;
+  color: #888;
+}
+#last_footer_part h2 {
+  font-size: 20px;
+  padding: 4px 0;
+}
+
+#last_footer_part :is(p, h2) {
+  text-align: center;
+}
+/*/-----------last footer block ends here --------------*/
